@@ -9,7 +9,7 @@ void disableKeyboard(){
 }
 
 int getKeyboardValue(){
-    float data = 0;
+    u16 data = 0;
 	data = Xil_In32(BASE_ADDDR+0x4);
     switch(data){
         case 0x0001:
